@@ -1,8 +1,9 @@
 <div class="container">
   <div class="row">
-    <div class="col-xs-12"></div>
-  </div>
-  <div class="row">
-    <div class="col-xs-12"></div>
+    <div class="col-xs-12">
+      <div class="container" *ngFor="let article of news.articles">
+        <app-list-item [article]="article"></app-list-item>
+      </div>
+    </div>
   </div>
 </div>

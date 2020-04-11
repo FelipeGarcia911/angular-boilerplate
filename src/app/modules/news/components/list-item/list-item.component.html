@@ -1,1 +1,20 @@
-<p>list-item works!</p>
+<div class="article row">
+  <div class="col-sm-3"><img src="{{ article.urlToImage }}" /></div>
+  <div class="col-sm-9">
+    <div class="row">
+      <div class="col-sm-12">
+        <h4>{{ article.title }}</h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <p>{{ article.description }}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <p>{{ article.author }}</p>
+      </div>
+    </div>
+  </div>
+</div>

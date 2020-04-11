@@ -12,7 +12,7 @@ export class ApiCallService {
 
   constructor(private client: HttpClient) {}
 
-  getAllNews(): Observable<Response[]> {
+  getAll(): Observable<Response[]> {
     return this.client.get<Response[]>(this.endpoint)
   }
 }
