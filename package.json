@@ -8,6 +8,7 @@
     "test": "ng test --code-coverage",
     "lint": "ng lint",
     "e2e": "ng e2e",
+    "deploy-prod": "rm -rf ./public && ng build --prod && firebase deploy --only hosting:app-angular-boilerplate",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
