@@ -8,7 +8,7 @@ import { environment } from '../../../environments/environment'
   providedIn: 'root',
 })
 export class ApiCallService {
-  private endpoint = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${environment.apiKey}`
+  private endpoint = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${environment.NEWS_API_KEY}`
 
   constructor(private client: HttpClient) {}
 

@@ -9,6 +9,8 @@ import { HttpClientModule } from '@angular/common/http'
 import { reducers, metaReducers } from './reducers'
 import { NavbarComponent } from './components/shared/navbar/navbar.component'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { GraphQLModule } from './graphql.module'
+import { MarkdownModule } from 'ngx-markdown'
 
 @NgModule({
   declarations: [AppComponent, NavbarComponent],
@@ -20,6 +22,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
       metaReducers,
     }),
     BrowserAnimationsModule,
+    GraphQLModule,
+    MarkdownModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

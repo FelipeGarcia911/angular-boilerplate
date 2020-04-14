@@ -1,6 +1,7 @@
 import { TestBed, async } from '@angular/core/testing'
 import { RouterTestingModule } from '@angular/router/testing'
 import { HttpClientTestingModule } from '@angular/common/http/testing'
+import { ApolloTestingModule } from 'apollo-angular/testing'
 
 import { AppComponent } from './app.component'
 import { NavbarComponent } from './components/shared/navbar/navbar.component'
@@ -8,7 +9,11 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component'
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [RouterTestingModule, HttpClientTestingModule],
+      imports: [
+        RouterTestingModule,
+        HttpClientTestingModule,
+        ApolloTestingModule,
+      ],
       declarations: [AppComponent, NavbarComponent],
     }).compileComponents()
   }))
