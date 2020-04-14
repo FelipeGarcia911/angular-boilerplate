@@ -8,6 +8,7 @@ import { HttpClientModule } from '@angular/common/http'
 
 import { reducers, metaReducers } from './reducers'
 import { NavbarComponent } from './components/shared/navbar/navbar.component'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 @NgModule({
   declarations: [AppComponent, NavbarComponent],
@@ -18,6 +19,7 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component'
     StoreModule.forRoot(reducers, {
       metaReducers,
     }),
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
